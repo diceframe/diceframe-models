@@ -1,0 +1,20 @@
+{
+  "catalog_version": 1,
+  "updated": "2026-11-14",
+  "models": [
+    {
+      "id": "bge-small-zh-v1.5",
+      "file": "models/bge-small-zh-v1.5/1.0.0.json",
+      "status": "released",
+      "recommended": true,
+      "summary": "中文优化的小型向量模型（MIT），DiceFrame 默认预设。"
+    },
+    {
+      "id": "granite-embedding-97m-r2-int8",
+      "file": "models/granite-embedding-97m-r2/0.1.0-candidate.json",
+      "status": "candidate",
+      "recommended": false,
+      "summary": "多语候选（Apache-2.0，INT8 约 97.9MB）；dimension/基准待确认后转 released。"
+    }
+  ]
+}

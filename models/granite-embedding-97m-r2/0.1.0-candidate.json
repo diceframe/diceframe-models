@@ -1,0 +1,49 @@
+{
+  "catalog_version": 1,
+  "models": [
+    {
+      "id": "granite-embedding-97m-r2-int8",
+      "display_name": "Granite Embedding 97M Multilingual R2 (INT8)",
+      "kind": "embedding",
+      "backend": "onnxruntime",
+      "version": "0.1.0-candidate",
+      "revision": "536a9f241cb3f02a9c5995a1e708c784bd274859",
+      "variant": "onnx-int8",
+      "dimension": 0,
+      "max_input_tokens": 512,
+      "max_input_chars": 2048,
+      "license": "apache-2.0",
+      "recommended": false,
+      "status": "candidate",
+      "notes": "候选条目：dimension 须在真实 CPU 推理基准确认后回填并转 released；基准矩阵见 benchmarks/README.md。",
+      "upstream": {
+        "source": "huggingface",
+        "repo": "onnx-community/granite-embedding-97m-multilingual-r2-ONNX",
+        "revision": "536a9f241cb3f02a9c5995a1e708c784bd274859",
+        "model_card": "https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2"
+      },
+      "onnx_file": "model.onnx",
+      "tokenizer_file": "tokenizer.json",
+      "files": [
+        {
+          "path": "model.onnx",
+          "url": "https://huggingface.co/onnx-community/granite-embedding-97m-multilingual-r2-ONNX/resolve/main/onnx/model_quantized.onnx",
+          "mirrors": [
+            "https://hf-mirror.com/onnx-community/granite-embedding-97m-multilingual-r2-ONNX/resolve/main/onnx/model_quantized.onnx"
+          ],
+          "size": 97858099,
+          "sha256": "704c1ebca5fbb7cd83ced41827658ac4c9990c64f7f2874d22b78044e5022e22"
+        },
+        {
+          "path": "tokenizer.json",
+          "url": "https://huggingface.co/onnx-community/granite-embedding-97m-multilingual-r2-ONNX/resolve/main/tokenizer.json",
+          "mirrors": [
+            "https://hf-mirror.com/onnx-community/granite-embedding-97m-multilingual-r2-ONNX/resolve/main/tokenizer.json"
+          ],
+          "size": 25301671,
+          "sha256": "51947676cae1f991fa51c6b9a24e14ee5460e5f0b9f692f13bb3159829d1592a"
+        }
+      ]
+    }
+  ]
+}
